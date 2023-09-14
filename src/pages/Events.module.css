@@ -1,0 +1,114 @@
+.all {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    /* height: 250vh; */
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bannerImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+    padding-top: 7%;
+}
+
+.card {
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.Img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.name2 {
+    /* position: absolute; */
+    /* bottom: 35%; */
+    /* left: 70%; */
+    font-size: 2vw;
+    /* font-family: monospace; */
+    color: #8c3601;
+    /* transition: opacity 0.3s; */
+}
+
+.icon {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .pic {
+        margin-top: 18%;
+    }
+
+    .Img {
+        width: 85%;
+        height: auto;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    .container {
+        flex-direction: column;
+        /* Cards will stack on top of each other on smaller screens */
+        align-items: center;
+    }
+    .pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+        grid-gap: 1.5rem;
+        padding-top: 12%;
+    }
+
+    .card {
+        width: 80%;
+        background: grey;
+        border-radius: 10px;
+        /* Adjust the width of the card for mobile screens */
+        margin: 10px 0;
+        /* Add spacing between stacked cards */
+    }
+    
+    .name2 {
+        /* position: absolute; */
+        /* bottom: 35%; */
+        /* left: 70%; */
+        font-weight: 600;
+        font-size: 7vw;
+        /* font-family: monospace; */
+        /* color: #3b3b3b; */
+        color: #8c3601;
+        /* transition: opacity 0.3s; */
+    }
+
+
+
+}
