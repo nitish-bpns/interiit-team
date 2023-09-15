@@ -27,7 +27,7 @@ const SideNavBar = () => {
 		{
 			text: "Media and Publicity",
 			icon: "icons/event.svg",
-			link: "/Web",
+			link: "/Media",
 		},
 		{
 			text: "Outreach & Hospitality",

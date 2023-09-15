@@ -6,6 +6,7 @@ import Outreach from './pages/Outreach';
 import Logistics from './pages/Logistics';
 import Sponsorship from './pages/Sponsorship';
 import Events from './pages/Events';
+import Media from './pages/media';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/Logistics' element={<Logistics />}></Route>
         <Route path='/Sponsorship' element={<Sponsorship />}></Route>
         <Route path='/Events' element={<Events />}></Route>
+        <Route path='/Media' element={<Media />}></Route>
       </Routes>
     </div>
   );
